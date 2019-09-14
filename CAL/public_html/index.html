@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cal</title> <!--titulo principal del programa -->
+         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> <!--era para poner icono pero no me funciono-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor=”00FFFF”> <!--sirve para darle color a la pagina-->
+                </body>
+   <H1 align="center"> <br><br><br><!--sirve para alinear todo el codigo y con \h1 se cierra y el br sirve para bajar el texto-->
+    <form name="calculator"> <!--nombre del formato-->
+        <input type="textfield" name="ans" value="" style='width:260px; height:55px'> <!--los width y lo height son para darle tamaños a los botones--> 
+    <br> 
+    <input type="button" value="1" onClick="document.calculator.ans.value+='1'" style='width:85px; height:35px'> 
+    <!--todos los input nos sirven para crear controles para los formularios y estos se cargen en la web-->
+    <input type="button" value="2" onClick="document.calculator.ans.value+='2'" style='width:85px; height:35px'> 
+    <!--el value esta declarado vacio y nosotros le estamos dando el valor en este caso es 2-->
+    <input type="button" value="3" onClick="document.calculator.ans.value+='3'" style='width:85px; height:35px'>
+    <!--en el momento en el que el de click automaticamente le dara el numero que corresponde que en este caso es 3-->
+    <input type="button" value="+" onClick="document.calculator.ans.value+='+'" style='width:85px; height:35px'>
+    <!--por ejemplo en este caso estamos en la suma el ans aguarda todos los numeros entonces al darle click en el boton suma 
+    leera los numeros y los sumara-->
+    <br>
+    <input type="button" value="4" onClick="document.calculator.ans.value+='4'" style='width:85px; height:35px'>
+    <input type="button" value="5" onClick="document.calculator.ans.value+='5'" style='width:85px; height:35px'>
+    <input type="button" value="6" onClick="document.calculator.ans.value+='6'" style='width:85px; height:35px'>
+    <input type="button" value="-" onClick="document.calculator.ans.value+='-'" style='width:85px; height:35px'>
+    <!--por ejemplo en este caso estamos en la resta el ans aguarda todos los numeros entonces al darle click en el boton resta leera los numeros
+    y los restara-->
+    <br>
+    <input type="button" value="7" onClick="document.calculator.ans.value+='7'" style='width:85px; height:35px'>
+    <input type="button" value="8" onClick="document.calculator.ans.value+='8'" style='width:85px; height:35px'>
+    <input type="button" value="9" onClick="document.calculator.ans.value+='9'" style='width:85px; height:35px'>
+    <input type="button" value="*" onClick="document.calculator.ans.value+='*'" style='width:85px; height:35px'>
+    <!--por ejemplo en este caso estamos en la multiplicacion el ans aguarda todos los numeros entonces al darle click en el boton multiplicar
+    leera los numeros y los multiplicara-->
+    <br>
+    <input type="button" value="0" onClick="document.calculator.ans.value+='0'" style='width:85px; height:35px'>
+    <input type="reset" value="c" style='width:85px; height:35px'> <!--es como un boton puede tener cualquier informacion o valor-->
+    <input type="button" value="/" onClick="document.calculator.ans.value+='/'" style='width:85px; height:35px'>  
+    <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" style='width:85px; height:35px'> 
+    <!--aguarda los datos-->
+    </h1>
+    </form>
+</html>
